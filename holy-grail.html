@@ -14,7 +14,6 @@
     }
     .row {
       display: flex;
-
     }
     .menu {
       width: 20%;
@@ -64,6 +63,44 @@
     ul {
       list-style: none;
       padding-left: 0;
+    }
+
+    @media only screen and (max-width: 800px) and (min-width: 601px) {
+      .ad {
+        display: none;
+      }
+      .content {
+        width: 80%;
+      }
+      .mediumText {
+        font-size: 25px;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      .row {
+        flex-direction: column;
+      }
+      .menu, .content, .ad {
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .menu {
+        text-align: center;
+        border-right: 10px solid black;
+      }
+      .content {
+        border: 10px solid black;
+      }
+      .ad {
+        border-left: 10px solid black;
+      }
+      .bigText {
+        font-size: 30px;
+      }
+      .mediumText {
+        font-size: 20px;
+      }
     }
   </style>
 </head>
